@@ -33,9 +33,7 @@ set_target_properties(opencsg PROPERTIES
     PUBLIC_HEADER "${CMAKE_SOURCE_DIR}/include/opencsg.h" 
 )
 
-find_package(OpenGL REQUIRED)
-
-target_link_libraries(opencsg PRIVATE OpenGL::OpenGL)
+find_package(OpenGL REQUIRED)]
 
 install(TARGETS opencsg
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
